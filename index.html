@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Welcome to Nazim Uddin's Developer Portfolio! I am a professional full-stack software developer living in the SF Bay Area. I love to code, solve, and lead.">
+    <meta name="keywords" content="Nazim Uddin, software, full-stack, developer, local, Bay Area">
+    <link rel="icon" type="image/x-icon" href="./assets/logo.png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>Nazim Uddin's Developer Portfolio</title>
+</head>
+<body>
+    <div class="floaters" id="logo"><img src="./assets/logo.png"></div>
+    <div class="floaters" id="menu" onclick="openMenu()">☰</div>
+    <section id="contents">
+        <h2>Table of Contents</h2>
+        <a href="#about">About Me</a>
+        <a href="#lang">Programming Languages</a>
+        <a href="#projects">Personal Projects</a>
+        <a href="#work">Work Experience</a>
+        <a href="#contact">Contact Me</a>
+        <button id="close" onclick="closeMenu()">Close Menu</button>
+    </section>
+    <section class="part" id="hero">
+        <div id="intro">
+            <h1 id="document-title">Nazim Uddin's Developer Portfolio</h1>
+            <p id="hook">Welcome to the latest, fastest, and cleanest version of this masterpiece.</p>
+        </div>
+    </section>
+    <section class="part" id="about">
+        <h2 data-aos="fade">About Me</h2>
+        <div>
+            <img id="portrait" src="https://nazim806.github.io/modern_portfolio/img/portrait.jpg" alt="My Picture">
+            <p id="about-me">Hi there! I'm Nazim. 
+                I am a full-stack software developer 
+                living in the San Francisco Bay Area.
+                I love to code and have been doing so 
+                for the past ${var} years.
+                Currently, I am working at a software company called "Code with Corgis."
+                People at Code with Corgis know me as the one who never gives up,
+                tries different approaches to tackle various problems,
+                and always knows there's room for improvement.
+            </p>
+        </div>
+    </section>
+    <section class="part" id="lang">
+        <h2>Programming Languages</h2>
+        <img src="./assets/languages.jpeg" alt="Languages I know">
+    </section>
+    <section class="part" id="projects">
+
+    </section>
+    <section class="part" id="work">
+
+    </section>
+    <section class="part" id="contact">
+
+    </section>
+
+    <script src="app.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>  
+</body>
+</html>
