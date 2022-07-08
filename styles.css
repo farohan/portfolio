@@ -19,6 +19,11 @@ body {
     color: rgb(105, 105, 105);
 }
 
+::selection {
+    background: rgb(6, 78, 180);
+    color: white;
+}
+
 h1 {
     font-size: 3.5rem;
 }
@@ -141,7 +146,9 @@ h2 {
 
 /*About Me Section*/
 
-#about {
+#about,
+#lang,
+#projects {
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -176,4 +183,107 @@ h2 {
 #portrait {
     height: 300px;
     border-radius: 100%;
+}
+
+/*Languages Section*/
+
+#lang > div {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#lang > h2,
+#projects > h2 {
+    text-align: center;
+    font-size: 4rem;
+    color: steelblue;
+}
+
+#languages {
+    height: 70vh;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.language {
+    font-size: 2rem;
+    width: 30%;
+    margin: 1rem 0;
+    background: steelblue;
+    border-radius: 3vh;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.language:hover {
+    transform: scale(1.2);
+}
+
+#wordart {
+    margin: auto;
+    height: 30rem;
+}
+
+/* Projects Section */
+
+.project-folder {
+    width: 90vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.project-file {
+    width: 30%;
+    background: steelblue;
+    padding: 1.25rem;
+    border-radius: 3vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-file > img {
+    height: 30vh;
+    transition: all 0.3s;
+}
+
+.project-file > img:hover {
+    transform: scale(1.1);
+}
+
+.project-title,
+.used-lang {
+    margin: 1rem;
+    color: white;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.project-nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.showcase {
+    font-size: 2rem;
+    background: white;
+    color: steelblue;
+    margin: 0 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.showcase:hover {
+    background: steelblue;
+    color: white;
 }
