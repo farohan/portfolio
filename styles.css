@@ -148,7 +148,9 @@ h2 {
 
 #about,
 #lang,
-#projects {
+#projects,
+#work,
+#contact {
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -193,7 +195,9 @@ h2 {
 }
 
 #lang > h2,
-#projects > h2 {
+#projects > h2,
+#work > h2,
+#contact > h2 {
     text-align: center;
     font-size: 4rem;
     color: steelblue;
@@ -251,6 +255,7 @@ h2 {
 
 .project-file > img {
     height: 30vh;
+    border-radius: 5px;
     transition: all 0.3s;
 }
 
@@ -260,10 +265,15 @@ h2 {
 
 .project-title,
 .used-lang {
-    margin: 1rem;
     color: white;
     text-align: center;
     font-size: 2rem;
+}
+
+.project-title {
+    font-size: 2.5rem;
+    font-weight: 500;
+    margin-bottom: 0;
 }
 
 .project-nav {
@@ -286,4 +296,87 @@ h2 {
 .showcase:hover {
     background: steelblue;
     color: white;
+}
+
+/* Work Experience Section */
+
+#jobs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.job {
+    color: white;
+    padding: 1rem;
+    border-radius: 3vh;
+    font-size: 2rem;
+    margin: 5vw;
+    cursor: pointer;
+    transition: all 0.35s;
+}
+
+.job:hover {
+    transform: scale(1.2);
+}
+
+.job-title,
+.job-years,
+#scroll-down {
+    text-align: center;
+}
+
+#scroll-down {
+    font-size: 2rem;
+    color: steelblue;
+}
+
+/* Contact Section */
+
+.sites {
+    width: 70vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.site {
+    border-radius: 3vh;
+    background: steelblue;
+    margin: 1rem;
+    padding: 1.5rem;
+}
+
+.site-img {
+    height: 30vh;
+    border-radius: 3vh;
+    transition: all 0.3s;
+}
+
+.site-img:hover {
+    transform: scale(1.1);
+}
+
+.site > p {
+    color: white;
+    text-align: center;
+    font-size: 2rem;
+}
+
+#telephone,
+#email {
+    margin-bottom: 0;
+    font-size: 2rem;
+    color: steelblue;
+    font-weight: bold;
+    text-align: center;
+}
+
+footer {
+    background: steelblue;
+    color: white;
+    margin-top: 12.5vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
