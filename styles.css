@@ -341,10 +341,15 @@ h2 {
 }
 
 .site {
+    width: 40%;
     border-radius: 3vh;
     background: steelblue;
     margin: 1rem;
-    padding: 1.5rem;
+    padding: 1.5rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .site-img {
@@ -379,4 +384,103 @@ footer {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+}
+
+/* Responsive Page for Mobile & Tablet Devices */
+
+@media only screen and (max-width: 980px) {
+    /* logo */
+
+    #logo > img {
+        height: 12.5vh;
+    }
+
+    /* about */
+
+    #about > div {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #about-me {
+        font-size: 1.5rem;
+    }
+
+    #portrait {
+        height: 200px;
+    }
+
+    /* languages */
+
+    #lang > div {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .language {
+        font-size: 1.5rem;
+    }
+
+    #wordart {
+        height: 15rem;
+    }
+
+    /*projects*/
+
+    .project-folder {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .project-file {
+        margin-bottom: 1rem;
+        width: 60vw;
+    }
+
+    .project-file > img {
+        display: none;
+    }
+
+    .project-title,
+    .used-lang,
+    .showcase {
+        font-size: 1.5rem;
+    }
+
+    /* work exp */
+
+    #work {
+        height: 70vh;
+    }
+
+    /* contact */
+
+    #contact > h2 {
+        margin: 5rem 0 0 0;
+    }
+
+    .sites {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .site {
+        width: 30vw;
+        height: 42.5%;
+    }
+
+    .site-img {
+        height: 20vh;
+    }
+}
+
+
+@media only screen and (max-width: 500px) {
+    .site {
+        width: 85vw;
+    }
 }
